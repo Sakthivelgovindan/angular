@@ -1,0 +1,29 @@
+<div class="addctrl" ng-controller="add">
+	<div class="addtop">
+		<ul>
+			<li><a href="#/close" id="add1">&times; </a></li>
+			<li><a href="" id="add2">Gallary</a></li>
+			<li><a href="#/next" id='add3' ng-click='storenext()'>Next</a></li>
+		</ul>
+	</div>
+	<div class="addover">
+		<div class="addfront">
+				<img src="{{images}}" alt="">
+		</div> 
+		<div class="addmiddle">
+			<table  ng-repeat="story in items">  
+				<tr ng-repeat="story1 in story.images">
+				<td><a href="" target=""><img src="{{story1.image1}}" alt="" ng-click="getmethod1($event,story1)"></a></td>
+				<td><a href="" target=""><img src="{{story1.image2}}" alt="" ng-click="getmethod2($event,story1)"></a></td>
+				<td><a href="" target=""><img src="{{story1.image3}}" alt="" ng-click="getmethod3($event,story1)"></a></td>
+				<td><a href="" target=""><img src="{{story1.image4}}" alt="" ng-click="getmethod4($event,story1)"></a></td>				
+				</tr>
+				
+			</table>
+			
+		</div>
+	
+	</div>
+	
+	
+</div>

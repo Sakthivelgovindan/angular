@@ -1,0 +1,27 @@
+<div class="profile-save1"  ng-controller="add">
+	<div class="profile-save2">
+		<ul>
+			<li><a href="#/profile-square"><img ng-src="images/front/arrow.png" alt="camera" ng-click="" id='fnext1'> </a></li>
+			<li><a href="#/" id='fnext22'>Saved</a></li>
+			<li><a href="#/next"><img ng-src="images/front/add.png" alt="camera" ng-click="" id='fnext33'> </a></li>
+		</ul>
+	</div>
+	<div class="profile-save3">
+		<ul>
+			<li><a href="#/" id='profilesave1'>ALL</a></li>
+			<li><a href="#/" id='profilesave2'>COLLECTION</a></li>
+		</ul>
+	</div>
+	<div class="profile-save4">
+		<div class="profile-data-save">
+			<table  ng-repeat="story in items">  
+				<tr ng-repeat="story1 in story.images">
+				<td><a href="" target=""><img src="{{story1.image1}}" alt="" ng-click="getmethod1($event,story1)"></a></td>
+				<td><a href="" target=""><img src="{{story1.image2}}" alt="" ng-click="getmethod2($event,story1)"></a></td>
+				<td><a href="" target=""><img src="{{story1.image3}}" alt="" ng-click="getmethod3($event,story1)"></a></td>			
+				</tr>
+				
+			</table>
+		</div>
+	</div>
+</div>

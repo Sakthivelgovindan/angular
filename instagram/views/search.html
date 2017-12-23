@@ -1,0 +1,52 @@
+<div class="searchbtn" ng-controller="search">
+	<div class="searchtop">
+		<table>
+			<tr>
+				<td><a href=""><img src="images/front/search.png" alt=""></a></td>
+				<td><input type="text" placeholder="search" id="inputsearch"></td>
+			</tr>
+		</table>
+	</div>
+				<div  class="stories2">
+					<ul style="width:1500px">
+						<li>
+							<table>  
+								  <tr>
+								    <td><a href="/images/front/sakthi.png" target="_blank"><img src="images/front/sakthi.png" alt=""></a></td>
+								  </tr>
+								  <caption align="bottom">you</caption>
+							</table>
+						</li>
+						<li ng-repeat="story in datas">
+							<table>  
+								  <tr>
+								    <td><a href="/{{story.images}}" target="_blank"><img src="{{story.images}}" alt="{{story.name}}"></a></td>
+								  </tr>
+								  <caption align="bottom">{{story.name}}</caption>
+							</table>
+						</li>
+						
+						
+					</ul>
+				</div>
+	<div class="searchmiddle">
+		<video width="400" height="200" controls autoplay>
+  				<source src="videos/sample2.mp4" type="video/mp4">
+		</video>
+	</div>
+	<div class="searchbottom">
+		<div class="searchdata">
+			<table>  
+				<tr  ng-repeat="story in items"  ng-switch on='$index % 4'>
+				<td ng-switch-when='0'><a href="/{{items[$index].images}}" target="_blank"><img src="{{items[$index].images}}" alt=""></a></td>
+				<td ng-switch-when='0'><a href="/{{items[$index+1].images}}" target="_blank"><img src="{{items[$index+1].images}}" alt=""></a></td>
+				<td ng-switch-when='0'><a href="/{{items[$index+2].images}}" target="_blank"><img src="{{items[$index+2].images}}" alt=""></a></td>		
+				<td ng-switch-when='0'><a href="/{{items[$index+3].images}}" target="_blank"	><img src="{{items[$index+3].images}}" alt=""></a></td>				
+				</tr>
+				
+			</table>
+			
+		</div>
+	</div>
+	
+</div>

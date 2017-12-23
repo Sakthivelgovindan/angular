@@ -1,0 +1,97 @@
+<div class="profile-page">
+	<div class='profile1'>
+		<ul>
+			<li id="pro1">Sakthivel_pgs</li>
+			<li><a href=""><img ng-src="images/front/downarrow.png" alt="camera" ng-click="" id="pro2"></a></li>
+			<li><a href=""><img ng-src="images/front/refresh.png" alt="camera" ng-click="" id="pro3"></a></li>
+			<li><a href=""><img ng-src="images/front/profileaccount.jpg" alt="instagram" ng-click=""  id="pro4"></a></li>
+			<li><a href=""><img ng-src="images/front/vertical.png" alt="direct" ng-click="" id="pro5"></a></li>
+		</ul>
+	</div>
+	<div class='profile2'>
+		<div class="pro11">
+			<a href=""><img ng-src="images/stories1/sakthivel.png" alt="profileimg"></a>
+		</div>
+		<div class="profile11">
+			<div class="pro22">
+				<ul>
+					<li>102</li>
+					<li>404</li>
+					<li>786</li>
+				</ul>
+			</div><br>
+			<div class="pro33">
+				<ul>
+					<li>posts</li>
+					<li>followers</li>
+					<li>following</li>
+				</ul>
+			</div>
+			<div class="pro44">
+				<a href=""><button>Edit your profile</button></a>
+			</div>
+		</div>
+		
+	</div>
+	<div class="pro55">
+					<h4>Sakthivel Govindan</h4>
+	</div>
+	<div class='profile3' id="profile33">
+		<ul>
+			<li><a href="#/profile-square"><img src="images/front/dots.jpg" alt=""></a></li>
+			<li><a href="#/profile-list"><img src="images/front/glypicon_list.png" alt=""></a></li>
+			<li><a href="#profile-tag"><img src="images/front/agenda_icon.png" alt=""></a></li>
+			<li><a href="#/profile-save"><img src="images/front/saved_logo.png" alt=""></a></li>
+		</ul>
+		
+	</div>
+	<div class='profile4' ng-controller="add">
+		<div ng-repeat="global in globalArray">
+				<div class="contentpro">
+					<li>
+						<table>  
+							  <tr>
+								<td><img src='images/stories1/sakthivel.png' alt="{{sakthivel_pgs}}" ></td>
+								<td>Sakthivel_pgs</td>
+							  </tr>
+						</table>
+					</li>
+				</div>
+				
+				<div class="contentimg">
+					<a href=""><img src="{{global.profile}}" alt="{{global.profile}}" align="center"></a>
+					</div>
+					<div class="contentlike">
+						<table>  
+							  <tr>
+								<td><a href=""><img src="images/front/like.png" alt="" id="like"></a></td>
+								<td><a href=""><img src="images/front/command.png" alt="" ></a></td>
+								<td><a href=""><img src="images/front/directsend.png" alt="" ></a></td>
+									
+							  </tr>
+						</table>
+						
+					</div>
+					<div class="contentview">
+						<table>  
+							  <tr>
+								<td>Liked by <b>_anand_felix_,esrral</b></td>
+								<td>and <b>10,230</b></td>
+							  </tr>
+						</table>
+						
+					</div>
+					<div class="contentname">
+						<table>  
+							  <tr>
+								<td><b>Sakthivel_pgs</b></td>
+								<td>{{global.conclusion}}</td>
+							  </tr>
+						</table>
+						
+					</div>
+			
+		
+	</div>
+
+</div>

@@ -1,0 +1,74 @@
+app.config(['$routeProvider',function($routeProvider){
+	$routeProvider
+	.when('/',{
+		templateUrl:'views/home.html',
+		controller:'home'
+	})
+	.when('/home',{
+		templateUrl:'views/home.html',
+		controller:'home'
+	})
+	.when('/search',{
+		templateUrl:'views/search.html',
+		controller:'search'
+	})
+	.when("/add",{
+		templateUrl:'views/add.html',
+		controller:'add'
+	})
+	.when('/notification',{
+		templateUrl:'views/notification.html',
+		controller:'notification'
+	})
+	.when('/profile-square',{
+		templateUrl:'views/profile-square.html',
+		controller:'profile'
+	})
+	.when('/profile-list',{
+		templateUrl:'views/profile-list.html',
+		controller:'profile'
+	})
+	.when('/profile-tag',{
+		templateUrl:'views/profile-tag.html',
+		controller:'profile'
+	})
+	.when('/profile-save',{
+		templateUrl:'views/profile-save.html',
+		controller:'profile'
+	})
+	.when('/camera',{
+		templateUrl:'views/camera.html',
+		controller:'camera'
+	})
+	.when('/direct',{
+		templateUrl:'views/direct.html',
+		controller:'direct'
+	})
+	.when('/watch',{
+		templateUrl:'views/watch.html',
+		controller:'watch'
+	})
+	.when('/next',{
+		templateUrl:'views/next.html',
+		controller:'add'
+	})
+	.when('/next1',{
+		templateUrl:'views/next1.html',
+		controller:'add'
+	})
+	.when('/advanced',{
+		templateUrl:'views/advanced.html'
+	})
+	.when('/editprofile',{
+		templateUrl:'views/editprofile.html'
+	})
+	.when('/close',{
+		redirectTo:function(){
+			return '/home'
+		}
+		
+	})
+}]);
+
+
+

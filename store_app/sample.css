@@ -1,0 +1,127 @@
+.home{
+	font-size:25px;
+	margin-left:230px;
+	margin-top:60px;
+
+}
+.home a{
+	padding-left:20px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	color: gray;
+	font-size: 30px;
+}
+
+.content{
+	margin-left: 250px;
+	font-size:20px;
+}
+.content1{
+	margin-left:250px;
+	font-size: 25px;
+}
+.content1 a{
+		text-decoration:none; 
+		color:gray;
+}
+.content1 a:hover{
+		text-decoration:underline; 
+}
+
+.divider{
+	margin-left:15em;
+	margin-right: 5em;
+	border-width: 2px;
+	color:lightgray;
+}
+.footer{
+	margin-left: 250px;
+}
+.footer a{
+	text-decoration: none;
+	color: gray;
+	font-size: 20px;
+	padding-right: 10px;
+}
+.footer a:hover{
+	text-decoration:underline;
+}
+
+.about{
+	margin-left: 250px;
+	font-size:20px;
+}
+
+.about1{
+	margin-left: 250px;
+	font-size: 25px;
+}
+
+.aboutlink ul{
+	margin-left: 250px;
+}
+
+.aboutlink a{
+	text-decoration: none;
+	font-size: 20px;
+	color: gray;
+}
+
+.aboutlink a:hover{
+	text-decoration: underline;
+}
+
+.cv{
+	margin-left: 250px;
+}
+
+.cvaddress{
+	margin-left: 250px;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.cvnext{
+	margin-left: 250px;
+}
+
+.cvnext1{
+	margin-left: 250px;
+	font-size: 20px;
+	
+}
+.cvnext1 p{
+	font-family: "Times New Roman", Times, serif;
+}
+
+.cvnext1 a{
+	text-decoration: none;
+	color: gray;
+}
+
+.cvnext1 a:hover{
+	text-decoration: underline;
+}
+
+.cvnext1 b{
+	color: black;
+}
+
+.blog,.blog1{
+	margin-left: 250px;
+}
+
+.blog1 a{
+	font-size: 24px;
+	color:gray;
+	text-decoration: none;
+}
+.blog1 a:hover{
+	
+	text-decoration: underline;
+}
+.blog1 b{
+	font-size: 21px;
+	color:black;
+
+}

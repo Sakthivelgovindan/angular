@@ -1,0 +1,35 @@
+<div class="notification" ng-controller='notification'>
+	<div class="notification1">
+		<ul>
+			<li id="note1">FOLLOWING</li>
+			<li id="note2">YOU</li>
+		</ul>
+	</div>
+	<div class="notify11">
+		<!--<div class="notification2" ng-repeat="notify in notification">
+		<div class="notify1">
+			<img src="{{notify.images}}" alt="">
+		</div>
+		<div  class="notify2">
+			{{notify.name}} {{notify.content}}
+		</div>
+		<div  class="notify3">
+			<img src="images/front/follow.png" alt="">
+		</div> 
+	</div>-->
+	<div ng-repeat='notify in notification'>
+			<ul>
+				<li>
+					<img src="{{notify.images}}" alt="" id="notify1">
+				</li>
+				<li id="notify2">
+					{{notify.name}} {{notify.content}}
+				</li>
+				<li>
+					<img src="images/front/follow.png" alt="" id="notify3">
+				</li>
+			</ul>
+	</div>
+	</div>
+	
+</div>

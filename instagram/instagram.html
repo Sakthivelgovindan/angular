@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+<head>
+	<meta charset="UTF-8">
+	<title>Instagram</title>
+	<link rel="stylesheet" href="instagram.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.js"></script>-->
+	<script type="text/javascript" src="instagram.js"></script>
+	<script src="Rootfiles/sample.js"></script>
+	<script src="Rootfiles/sample-route.js"></script>
+	<script src="Rootfiles/jquery.js"></script>
+	<script src="Rootfiles/jqueryuser.js"></script>
+	<script src="controllers/home.js"></script>
+	<script src="controllers/camera.js"></script>
+	<script src="controllers/add.js"></script>
+	<script src="controllers/search.js"></script>
+	<script src="controllers/notification.js"></script>
+	<script src="controllers/profile.js"></script>
+	<script src="directives/directive.js"></script>
+	<script src="filters/reverse.js"></script>
+	
+	
+</head>
+<body>
+	<div class="page-wrap">
+		<div class="container">
+			<div ng-view>
+				
+			</div>
+			
+		</div>
+
+		<div class="bottom">
+			<ul>
+				<li><a href="#/home"><img ng-src="images/front/home.png" alt="home" ng-click="" id="home"></a></li>
+				<li><a href="#/search"><img ng-src="images/front/search.png" alt="search" ng-click="" id="search"></a></li>
+				<li><a href="#/add"><img ng-src="images/front/add.svg" alt="add" ng-click="" id="add"></a></li>
+				<li><a href="#/notification"><img ng-src="images/front/notification.jpg" alt="notification" ng-click="" id="notification"></a></li>
+				<li><a href="#/profile-square"><img ng-src="images/front/account.png" alt="account" ng-click="" id="profile"></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<div class="home">
+	<div class="hometop">
+		<ul>
+			<li><a href="#/camera"><img ng-src="images/front/camera.jpg" alt="camera" ng-click="" id="insta1"></a></li>
+			<li><a href="#/instagram"><img ng-src="images/front/instagram.png" alt="instagram" ng-click=""  id="insta2"></a></li>
+			<li><a href="#/direct"><img ng-src="images/front/direct.png" alt="direct" ng-click="" id="insta3"></a></li>
+		</ul>
+	</div> 
+	<div class="homecontentdata">
+		<div class="homemiddle">
+		<ul>
+			<li><a href="" id="home1">Stories</a></li>
+			<li><a href="" id="home2">Watch All</a></li>
+		</ul>
+	</div> 
+	<div class='homebottom'>
+		<div ng-repeat="storyitems in items">
+				<div class="contentpro">
+					<li>
+						<table>  
+							  <tr>
+								<td><img src="{{storyitems.images}}" alt="{{storyitems.name}}" ></td>
+								<td>{{storyitems.name}}</td>
+							  </tr>
+						</table>
+					</li>
+				</div>
+				
+				<div class="contentimg">
+					<a href=""><img src="{{storyitems.images}}" alt="{{storyitems.name}}" align="center"></a>
+					</div>
+					<div class="contentlike">
+						<table>  
+							  <tr>
+								<td><a href=""><img src="images/front/like.png" alt="{{storyitems.name}}" id="like"></a></td>
+								<td><a href=""><img src="images/front/command.png" alt="{{storyitems.name}}" ></a></td>
+								<td><a href=""><img src="images/front/directsend.png" alt="{{storyitems.name}}" ></a></td>
+								<td><a href=""><img src="images/front/saved_logo.png" alt="{{storyitems.name}}"  id="likes1"></a></td>
+									
+							  </tr>
+						</table>
+						
+					</div>
+					<div class="contentview">
+						<table>  
+							  <tr>
+								<td>Liked by <b>_anand_felix_,esrral</b></td>
+								<td>and <b>{{storyitems.likes}}</b></td>
+							  </tr>
+						</table>
+						
+					</div>
+					<div class="contentname">
+						<table>  
+							  <tr>
+								<td><b>{{storyitems.name}}</b></td>
+								<td>#instamode #coolpic #awesome</td>
+							  </tr>
+						</table>
+						
+					</div>
+					<br>
+			
+		
+	</div>
+	</div>
+	
+</div>
